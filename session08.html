@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            width: 700px;
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 25px;
+
+            #imgBig {
+                width: 650px;
+                height: 400px;
+                border: 1px solid black;
+            }
+
+            #section1 {
+                display: flex;
+                justify-content: center;
+            }
+
+            #section2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                div {
+                    display: flex;
+                    gap: 10px;
+
+                }
+            }
+
+            .imgSmall {
+                width: 80px;
+                height: 80px;
+                border: 1px solid black;
+            }
+
+        }
+
+        .currentImage {
+            border: 3px solid blue;
+        }
+
+        #pre,
+        #next {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="section1">
+            <img id="imgBig" src="" alt="">
+        </section>
+        <section id="section2">
+            <p id="pre">&#60;</p>
+            <div id="listImage" style="">
+
+            </div>
+            <p id="next">&#62;</p>
+        </section>
+    </main>
+</body>
+<script src="./bai8.js"> </script>
+
+</html>
